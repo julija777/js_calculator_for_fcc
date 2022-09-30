@@ -1,0 +1,30 @@
+.App {
+  display: flex;
+  justify-content: center;
+}
+
+.calculator {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 300px;
+  height: 400px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.calculator > * {
+  border: 1px solid rgb(42, 204, 218);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+  background-color: rgba(119, 175, 201, 0.911);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.row {
+  grid-column: 1 / -1;
+}
+
+
